@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+// enabling HTTP services
+import { HttpClientModule } from '@angular/common/http';
 //import RouterModule for routes
 import { RouterModule, Routes } from '@angular/router';
 
@@ -19,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     AppRoutingModule
   ],
